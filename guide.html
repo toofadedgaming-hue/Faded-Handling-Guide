@@ -30,7 +30,7 @@
 
                     </p>
                     <hr>
-                    <p>Thankfully, Grand Theft Auto V features a surprisingly comprehensive and detailed handling
+                    <p>Thankfully, Grand Theft Auto(V) features a surprisingly comprehensive and detailed handling
                         physics system. While the engine simplifies very complex matters into only sets of two or three
                         variables, it does allow to make vehicles behave in a sufficiently complex manner that can
                         mimick IRL to a sufficient degree, allowing for concepts like weight transfer,
@@ -69,7 +69,7 @@
                     </p>
                     <hr>
                     <p>Starts as the model's center, visible with OpenIV's model viewer. <i>vecCentreOfMassOffset</i>
-                        offsets it around so you can put the CoM wherever you want.</p>
+                        offsets it around so you can put the CoM wherever you want. I don't usually mess with this value, but will if the creator of the car doesn't do a good job with this value.</p>
 
                     <h4>Must-knows</h4>
                     <ul>
@@ -111,7 +111,8 @@
                         <small class="text-muted">vecInertiaMultiplier</small>
                     </p>
                     <hr>
-                    <p>To be written.</p>
+                    <p>TLDR: Basically how fast the RPM will go up. 1 is default, lower is slower, higher is faster.
+                         For vehicles like a semi, you can increase it so it maxes out RPMs to shift faster. For vehicles like a garbage truck, you can slow it down, so it takes a lot longer to MAX RPMs to shift</p>
 
                 </article>
                 <article>
@@ -216,7 +217,7 @@
 
                     <p>This is one of the most arcade systems in V. Downforce translates directly to grip gain on the
                         wheel,
-                        and can abide to wildly different rulesets depending on your needs.</p>
+                        and can abide to wildly different rulesets depending on your needs. I typically don't use it, since spoilers give it automatically but you can add some. I usualyl dont go above a value of 2.</p>
                     <p>
                         The base math goes as follows:<br>
 
@@ -287,7 +288,16 @@
                     <hr>
 
                     <p>
-                        To be written.
+                        To be very simply put:<br>
+                        Spring strength & travel (via SuspensionForce and SuspensionLowerLimit/SuspensionUpperLimit limits) determine how “soft” or “hard” the ride is, and how much the suspension can move.</p>
+
+                        <p>Damping (CompDamp and ReboundDamp) determine how quickly the vehicle settles after suspension movement (bumps, landing, etc).</p>
+
+                        <p>Ride height/stance (SuspensionRaise) changes how the chassis sits relative to wheels.</p>
+
+                        <p>Balance between front & rear suspension (SuspensionBiasFront) changes how the vehicle behaves when turning (which end moves more).</p>
+
+                        <p>Roll resistance (AntiRollBarForce & BiasFront) manage how much the body leans in corners, and whether the front or rear handles that role.</p>
                     </p>
                 </article>
 
@@ -311,7 +321,7 @@
 
                 <article>
                     <p>
-                        <span class="h2">My Philosophy</span> <br>
+                        <span class="h2">Eddlm's Philosophy</span> <br>
                     </p>
                     <hr>
                     <span class="h5">Fun</span>
